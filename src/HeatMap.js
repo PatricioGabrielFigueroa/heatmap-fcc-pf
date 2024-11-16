@@ -8,6 +8,7 @@ function HeatMap() {
   const paletteRef = useRef(null);
   const [data, setData] = useState([]);
   const [fetchedData, setFetchedData] = useState(false);
+  
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
 
@@ -168,6 +169,7 @@ function HeatMap() {
       d3.select(mSvg).select('svg').remove();
       d3.select(mPalette).select('svg').remove();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fetchedData]);
 
   return (
