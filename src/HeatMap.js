@@ -169,7 +169,7 @@ function HeatMap() {
       d3.select(svgRef.current).select('svg').remove();
       d3.select(paletteRef.current).select('svg').remove();
     }
-  }, [fetchedData]);
+  }, [fetchedData, data]);
 
   return (
     <div>
